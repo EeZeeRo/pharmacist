@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productId": 1,
+      "title": "Цитрамон П",
+      "fabricator": "Обновление ПФК АО",
+      "type": "drugs",
+      "count": 20,
+      "price": 63,
+      "actualPrice": 62
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "title": "Лизобакт",
+      "fabricator": "Босналек АО",
+      "type": "granules",
+      "count": 0,
+      "price": 360,
+      "actualPrice": 360
+    },
+    {
+      "id": 3,
+      "productId": 2,
+      "title": "Лизобакт",
+      "fabricator": "Босналек АО",
+      "type": "granules",
+      "count": 0,
+      "price": 360,
+      "actualPrice": 360
+    },
+    {
+      "id": 4,
+      "productId": 1,
+      "title": "Цитрамон П",
+      "fabricator": "Обновление ПФК АО",
+      "type": "drugs",
+      "count": 20,
+      "price": 63,
+      "actualPrice": 63
+    },
+    {
+      "id": 5,
+      "productId": 1,
+      "title": "Цитрамон П",
+      "fabricator": "Обновление ПФК АО",
+      "type": "drugs",
+      "count": 20,
+      "price": 63,
+      "actualPrice": 63
+    }
+  ],
+  "users": [
+    {
+      "userId": 1,
+      "phone": 79967066439,
+      "email": "meamerott@gmail.com",
+      "authorized": true
+    }
+  ]
+}

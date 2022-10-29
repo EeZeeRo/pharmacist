@@ -1,0 +1,42 @@
+.header {
+    margin-top: 50px;
+}
+.header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header nav a {
+    text-decoration: none;
+    color: black;
+}
+.header nav .nav-item {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.header nav .nav-item .nav-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.header nav .nav-menu a + a {
+    margin-left: 50px;
+}
+.header nav .nav-item .cart {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+.header nav .nav-item .nav-selected {
+    border-bottom: 4px solid #00AA95;
+}
+.header nav .nav-item .cart img {
+    width: 35px;
+    height: 35px;
+    opacity: 0.35;
+}
+.header nav .nav-item .nav-button {
+    border-radius: 15px;
+    padding: 8px 40px;
+}
