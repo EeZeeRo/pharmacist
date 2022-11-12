@@ -20,6 +20,8 @@ function App() {
     fetchJson('http://localhost:3001/products')
       .then(products => {
         setProducts(products)
+      })
+      .finally(() => {
         setLoading(false)
       })
   }, [])

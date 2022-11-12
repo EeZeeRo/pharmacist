@@ -1,18 +1,18 @@
 .products {
     margin-top: 50px;
-    width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
 }
 .product {
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 450px;
     justify-content: space-between;
     padding: 10px 0 10px 20px;
     border-left: 4px solid #00AA95;
     margin-bottom: 50px;
+    margin: 20px 50px;
 }
 .product #drug {
     max-width: 175px;
@@ -63,6 +63,7 @@
 }
 .product-buy .button-neactive {
     opacity: 0.35;
+    cursor: not-allowed;
 }
 .product .product-outof {
     color: #FF7676;
