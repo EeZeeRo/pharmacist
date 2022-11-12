@@ -1,18 +1,18 @@
-# Getting Started with Create React App
+# Начало работы с Create React APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Этот проект был запущен с [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Доступные скрипты
 
-In the project directory, you can run:
+В директории проекта Вы можете использовать:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Запускает проект в режиме разработчика.\
+Откройте [http://localhost:3000](http://localhost:3000) чтобы посмотреть сайт в браузере.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Страница сама перезагрузится после внесения изменений.\
+Вы можете посмотреть имеющиеся ошибки в консоли.
 
 ### `npm run server`
 
@@ -25,11 +25,11 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Learn More
+## Прочая информация
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Вы можете прочитать больше в [документации по созданию React приложения](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Чтобы изучить React перейдите в [React документацию](https://reactjs.org/).
 
 ### Code Splitting
 
