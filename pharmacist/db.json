@@ -57,7 +57,8 @@
       "phone": 79967066439,
       "email": "meamerott@gmail.com",
       "password": "test123",
-      "authorized": true
+      "authorized": true,
+      "cart": [2, 4]
     }
   ]
 }

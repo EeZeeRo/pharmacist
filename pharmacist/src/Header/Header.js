@@ -24,14 +24,16 @@ function Header(){
                         </Link>
                     </li>
                     <li className="nav-item">
-                            <div className="cart">
-                                <Link to="/cart">
-                                    <img src={cart} />
-                                </Link>
-                            </div>
-                        <div className="primary-button nav-button">
-                            <p>Войти</p>
+                        <div className="cart">
+                            <Link to="/cart">
+                                <img src={cart} />
+                            </Link>
                         </div>
+                        <Link to="/login">
+                            <div className="primary-button nav-button">
+                                <p>Войти</p>
+                            </div>
+                        </Link>
                     </li>
                 </ul>
             </nav>

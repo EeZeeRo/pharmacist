@@ -3,58 +3,65 @@
 	src: url('./assets/fonts/MusticaPro-Semibold.otf') format('opentype');
 }
 @font-face {
-    font-family: UberMove;
-    src: url('./assets/fonts/UberMoveBold.otf') format('opentype');
+	font-family: UberMove;
+	src: url('./assets/fonts/UberMoveBold.otf') format('opentype');
 }
 * {
-  padding: 0;
-  margin: 0;
-  font-family: MusticaPro;
+	padding: 0;
+	margin: 0;
+	font-family: MusticaPro;
 }
 .container {
-  max-width: calc(100vw - 50px);
-  margin: 0 auto;
+	max-width: calc(100vw - 50px);
+	margin: 0 auto;
 }
 .primary-button {
-  background: #00AA95;
-  color: white;
-  cursor: pointer;
-  user-select: none;
+	background: #00AA95;
+	color: white;
+	cursor: pointer;
+	user-select: none;
 }
 
 /* Loader */
 .lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
 }
 .lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #00AA95;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #00AA95 transparent transparent transparent;
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid #00AA95;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: #00AA95 transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
+  	animation-delay: -0.45s;
 }
 .lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
+  	animation-delay: -0.3s;
 }
 .lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
+  	animation-delay: -0.15s;
 }
 @keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.notfound {
+  	color: #00AA95;
+  	font-size: 50px;
+  	text-align: center;
+  	margin-top: 150px;
 }
