@@ -10,9 +10,9 @@
     width: 450px;
     justify-content: space-between;
     padding: 10px 0 10px 20px;
-    border-left: 4px solid #00AA95;
+    border-left: 5px solid #00AA95;
     margin-bottom: 50px;
-    margin: 20px 50px;
+    margin: 20px 50px 0 0;
 }
 .product #drug {
     max-width: 175px;

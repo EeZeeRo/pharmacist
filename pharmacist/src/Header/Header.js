@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Header.css'
 import logo from '../assets/img/logo512.png'
 import cart from '../assets/img/cart.png'
@@ -8,24 +9,26 @@ function Header(){
         <header className="header">
             <nav>
                 <ul>
-                    <a href="/">
+                    <Link to="/">
                         <li className="nav-item">
                             <img className="nav-logo" src={logo} />
                             <p>pharmacist.ru</p>
                         </li>
-                    </a>
+                    </Link>
                     <li className="nav-item nav-menu">
-                        <a href="/">
+                        <Link to="/">
                             <p className={window.location.pathname == '/' ? 'nav-selected' : ''}>Каталог</p>
-                        </a>
-                        <a href="/info">
+                        </Link>
+                        <Link to="/info">
                             <p className={window.location.pathname == '/info' ? 'nav-selected' : ''}>Информация</p>
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <div className="cart">
-                            <img src={cart} />
-                        </div>
+                            <div className="cart">
+                                <Link to="/cart">
+                                    <img src={cart} />
+                                </Link>
+                            </div>
                         <div className="primary-button nav-button">
                             <p>Войти</p>
                         </div>

@@ -72,7 +72,7 @@ function Product({ product, index }){
             <div className="product-right">
                 <img id="drug" src={prod_img} />
             </div>
-        </div> 
+        </div>
     )
 }
 

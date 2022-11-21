@@ -1,0 +1,41 @@
+.search-line {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+.search {
+    width: 700px;
+    border-bottom: 5px solid #00AA95;
+    display: flex;
+    align-items: center;
+}
+.search .search-query {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: Mustica Pro;
+    font-size: 20px;
+}
+.search .search-query::placeholder {
+    color: black;
+    opacity: .35;
+}
+.search img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.city {
+    margin-left: 50px;
+    border-bottom: 5px solid #00AA95;
+}
+.city select {
+    border: none;
+    outline: none;
+    font-family: Mustica Pro;
+    font-size: 20px;
+    padding: 15px 0;
+}

@@ -1,0 +1,31 @@
+.section-info {
+    margin-top: 50px;
+}
+.info-contacts .info-contacts-row {
+    display: flex;
+    align-items: center;
+}
+.info-contacts .info-contacts-row img {
+    width: 25px;
+    height: 25px;
+}
+.info-contacts .info-contacts-row p {
+    margin-left: 10px;
+    font-size: 25px;
+}
+.info-map {
+    margin-top: 30px;
+}
+.info-map p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.info-license {
+    margin-top: 30px;
+}
+.info-license p {
+    opacity: .5;
+}
+.info-license p + p {
+    margin-top: 10px;
+}
