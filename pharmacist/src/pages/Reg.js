@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
-import '../assets/css/Auth.css';
+import "../assets/css/Auth.css";
 
-function doLogin(e){
+function doRegister(e) {
     e.preventDefault();
 
-    let login_form = document.querySelector('#login_authorize');
+    let login_form = document.querySelector("#register_create");
     login_form.submit();
 }
 
-export default function Auth() {
+export default function Reg() {
     return (
         <div className="wrapper">
             <section className="section-header">
@@ -21,29 +21,27 @@ export default function Auth() {
             <section className="section-login">
                 <div className="container">
                     <div className="login-form">
-                        <form method="POST" id="login_authorize">
-                            <p className="form-title">Авторизация</p>
+                        <form method="POST" id="register_create">
+                            <p className="form-title">Регистрация</p>
                             <div className="form-input">
-                                <input type="text" name="login-phone" placeholder="Номер телефона" />
+                                <input type="text" name="reg-phone" placeholder="Номер телефона"/>
                             </div>
                             <div className="form-input">
-                                <input type="password" name="login-password" placeholder="Пароль" />
+                                <input type="mail" name="reg-mail" placeholder="Почта"/>
+                            </div>
+                            <div className="form-input">
+                                <input type="password" name="reg-password" placeholder="Пароль"/>
                             </div>
                             <div className="form-row">
-                                <Link to="/register">
+                                <Link to="/login">
                                     <div className="form-button">
-                                        <p>Создать аккаунт</p>
+                                        <p>Авторизация</p>
                                     </div>
                                 </Link>
-                                <div className="form-button" onClick={doLogin}>
-                                    <p>Войти</p>
+                                <div className="form-button" onClick={doRegister}>
+                                    <p>Готово</p>
                                 </div>
                             </div>
-                            <p className="form-primary">
-                                <Link to="/forgot">
-                                    Забыли пароль?
-                                </Link>
-                            </p>
                         </form>
                     </div>
                 </div>

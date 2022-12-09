@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import Product from './Product';
 import './Product.css';
 
-function ProductList(props){
+function ProductList(props) {
     return (
         <div className="products">
-            { props.products.map((product, index) => {
+            {props.products.map((product, index) => {
                 return <Product product={product} key={product.id} index={index} />
-            }) }
+            })}
         </div>
     )
 }

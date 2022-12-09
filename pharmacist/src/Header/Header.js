@@ -4,7 +4,7 @@ import './Header.css'
 import logo from '../assets/img/logo512.png'
 import cart from '../assets/img/cart.png'
 
-function Header(){
+function Header() {
     return (
         <header className="header">
             <nav>
