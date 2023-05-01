@@ -60,8 +60,6 @@ function Product({ product, index }) {
                     (item) => id == JSON.parse(item).id
                 ); // ищет в списке объектов объект, у которого совпадает id с тем, на который нажали
 
-                console.log(findIndex);
-
                 if (findIndex === -1) {
                     // если не нашел
                     // arr.push(

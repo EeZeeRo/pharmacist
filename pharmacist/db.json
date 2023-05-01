@@ -49,6 +49,46 @@
       "count": 20,
       "price": 63,
       "actualPrice": 64
+    },
+    {
+      "id": 6,
+      "productId": 1,
+      "title": "Цитрамон П",
+      "fabricator": "Обновление ПФК АО",
+      "type": "drugs",
+      "count": 20,
+      "price": 63,
+      "actualPrice": 64
+    },
+    {
+      "id": 7,
+      "productId": 1,
+      "title": "Цитрамон П",
+      "fabricator": "Обновление ПФК АО",
+      "type": "drugs",
+      "count": 20,
+      "price": 63,
+      "actualPrice": 64
+    },
+    {
+      "id": 8,
+      "productId": 2,
+      "title": "Лизобакт",
+      "fabricator": "Босналек АО",
+      "type": "granules",
+      "count": 13,
+      "price": 360,
+      "actualPrice": 360
+    },
+    {
+      "id": 9,
+      "productId": 2,
+      "title": "Лизобакт",
+      "fabricator": "Босналек АО",
+      "type": "granules",
+      "count": 5,
+      "price": 360,
+      "actualPrice": 360
     }
   ]
 }
