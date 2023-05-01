@@ -14,7 +14,7 @@ function ProductList(props) {
 }
 
 ProductList.propTypes = {
-    products: PropTypes.arrayOf(PropTypes.object).isRequired
+    products: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export default ProductList;

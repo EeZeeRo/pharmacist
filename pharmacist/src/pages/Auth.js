@@ -1,16 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
+
 import Header from "../Header/Header";
-import '../assets/css/Auth.css';
+import "../assets/css/Auth.css";
 
-function doLogin(e){
-    e.preventDefault();
+const Auth = () => {
+    const navigate = useNavigate();
 
-    let login_form = document.querySelector('#login_authorize');
-    login_form.submit();
-}
+    const submitHandler = () => {
+        localStorage.setItem("isAuth", true);
+        navigate("/");
+    };
 
-export default function Auth() {
+    useEffect(() => {
+        if (localStorage.getItem("isAuth")) {
+            navigate("/");
+        }
+    }, []);
+
     return (
         <div className="wrapper">
             <section className="section-header">
@@ -21,13 +28,23 @@ export default function Auth() {
             <section className="section-login">
                 <div className="container">
                     <div className="login-form">
-                        <form method="POST" id="login_authorize">
+                        <form onSubmit={submitHandler}>
                             <p className="form-title">Авторизация</p>
                             <div className="form-input">
-                                <input type="text" name="login-phone" placeholder="Номер телефона" />
+                                <input
+                                    type="text"
+                                    title={"логин"}
+                                    name={"login"}
+                                    placeholder="Номер телефона"
+                                />
                             </div>
                             <div className="form-input">
-                                <input type="password" name="login-password" placeholder="Пароль" />
+                                <input
+                                    type="password"
+                                    title={"пароль"}
+                                    name={"password"}
+                                    placeholder="Пароль"
+                                />
                             </div>
                             <div className="form-row">
                                 <Link to="/register">
@@ -35,14 +52,12 @@ export default function Auth() {
                                         <p>Создать аккаунт</p>
                                     </div>
                                 </Link>
-                                <div className="form-button" onClick={doLogin}>
+                                <button className="form-button">
                                     <p>Войти</p>
-                                </div>
+                                </button>
                             </div>
                             <p className="form-primary">
-                                <Link to="/forgot">
-                                    Забыли пароль?
-                                </Link>
+                                <Link to="/forgot">Забыли пароль?</Link>
                             </p>
                         </form>
                     </div>
@@ -50,4 +65,6 @@ export default function Auth() {
             </section>
         </div>
     );
-}
+};
+
+export default Auth;

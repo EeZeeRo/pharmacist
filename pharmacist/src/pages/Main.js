@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
+import { useNavigate } from "react-router-dom";
 import Header from '../Header/Header';
 import Loader from '../Loader';
 import Search from '../Search/Search';
@@ -14,14 +15,22 @@ function Main(){
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
+    const navigate = useNavigate();
+
     useEffect(() => {
-    fetchJson('http://localhost:3001/products')
-        .then(products => {
-            setProducts(products)
-        })
-        .finally(() => {
-            setLoading(false)
-        })
+        if (!localStorage.getItem('isAuth')) {
+            navigate("/login");
+        }
+    }, []);
+
+    useEffect(() => {
+        fetchJson('http://localhost:3001/products')
+            .then(products => {
+                setProducts(products)
+            })
+            .finally(() => {
+                setLoading(false)
+            })
     }, [])
     // function toggleTodo(id){
     //   setTodos(

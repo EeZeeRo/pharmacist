@@ -21,6 +21,12 @@
 	cursor: pointer;
 	user-select: none;
 }
+.negative-button {
+	background: #e05151;
+	color: white;
+	cursor: pointer;
+	user-select: none;
+}
 
 /* Loader */
 .lds-ring {
