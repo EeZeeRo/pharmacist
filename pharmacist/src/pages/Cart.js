@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Loader from '../Loader';
 import { useNavigate } from "react-router-dom";
 import CartList from '../Cart/CartList';
+import '../assets/css/Cart.css';
 
 const fetchJson = async (url) => {
     const response = await fetch(url);
@@ -58,19 +59,25 @@ export default function Cart(){
                 <div className="container">
                     <p className="cart-title">Получение товаров</p>
                     <div className="cart-main">
-                        <select name="cart-tab">
-                            <option value="pickup">Самовывоз</option>
-                            <option value="delivery">Доставка</option>
-                        </select>
+                        <div className="cart-main-tab">
+                            <label htmlFor="deliveryType1">
+                                <input id="deliveryType1" name="delivery_type" type="radio" checked />
+                                <p>Самовывоз</p>
+                            </label>
+                            <label htmlFor="deliveryType2">
+                                <input id="deliveryType2" name="delivery_type" type="radio" />
+                                <p>Доставка</p>
+                            </label>
+                        </div>
                         <div className="cart-main-body">
                             <div className="cart-main-info">
-                                <div className="cart-main-row">
+                                <div className="cart-main-row full-row">
                                     <input type="text" name="address" placeholder="Ваш адрес" required/>
                                 </div>
                                 <div className="cart-main-row">
-                                    <input type="text" name="home" placeholder="Дом" required/>
-                                    <input type="text" name="flat" placeholder="Квартира" required/>
-                                    <input type="submit" name="pay" value="Оплатить" />
+                                    <input type="number" id="inputHome" name="home" placeholder="Дом" required/>
+                                    <input type="number" id="inputApart" name="flat" placeholder="Квартира" required/>
+                                    <input type="submit" id="inputSubmit" name="pay" value="Оплатить" />
                                 </div>
                                 <div className="cart-products">
                                     <div className="cart-products-title">
@@ -78,7 +85,7 @@ export default function Cart(){
                                     </div>
                                     <div className="cart-products-list">
                                         {loading && <Loader />}
-                                        {products.length ? <CartList products={products[0]} setProducts={setProducts} /> : loading ? null : <p>Корзина пуста</p>}
+                                        {products.length ? <CartList products={products[0]} setProducts={setProducts} /> : loading ? null : <p class="cart-empty">Корзина пуста</p>}
                                     </div>
                                 </div>
                             </div>

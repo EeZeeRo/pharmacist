@@ -1,0 +1,67 @@
+.section-cart {
+    margin-top: 50px;
+}
+.cart-title {
+    font-size: 25px;
+    color: rgba(0, 0, 0, .5);
+}
+.cart-main {
+    margin-top: 20px;
+    font-size: 25px;
+}
+.cart-main .cart-main-tab {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-main .cart-main-tab input {
+    display: none;
+}
+.cart-main .cart-main-tab label input:checked + p {
+    border-bottom: 4px solid #00AA95;
+}
+.cart-main .cart-main-body {
+    margin-top: 20px;
+}
+.cart-main .cart-main-body .cart-main-row {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.cart-main .cart-main-body .full-row input {
+    width: 100%;
+    text-align: left;
+}
+.cart-main .cart-main-body input {
+    border: none;
+    font-size: 25px;
+    outline: none;
+    border-bottom: 4px solid #00AA95;
+    text-align: center;
+}
+.cart-main .cart-main-body #inputHome {
+    width: 70px;
+}
+.cart-main .cart-main-body #inputApart {
+    width: 120px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+.cart-main .cart-main-body #inputSubmit {
+    border: none;
+    background: #00AA95;
+    color: white;
+    font-size: 20px;
+    padding: 3px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cart-empty {
+    color: rgba(0, 0, 0, .5);
+}

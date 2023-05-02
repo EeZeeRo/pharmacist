@@ -28,6 +28,10 @@
 	user-select: none;
 }
 
+.section-cart {
+	font-family: MusticaPro;
+}
+
 /* Loader */
 .lds-ring {
 	display: inline-block;

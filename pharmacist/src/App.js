@@ -23,10 +23,8 @@ function App() {
 	const navigate = useNavigate();
 
     useEffect(() => {
-        const accessToken = localStorage.getItem('accessToken');
-        if (!accessToken) {
+        if (!localStorage.getItem('accessToken')) {
             navigate("/login");
-			// <Auth />
         }
     }, []);
 
@@ -34,12 +32,12 @@ function App() {
 		<>
 			<Routes>
 				<Route path="/" element={<Main />} />
+				<Route path="*" element={<Notfound />} />
 				<Route path="/info" element={<Info />} />
 				<Route path="/login" element={<Auth />} />
 				<Route path="/register" element={<Reg />} />
 				<Route path="/forgot" element={<Forgot />} />
 				<Route path="/cart" element={<Cart />} />
-				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</>
 	)
